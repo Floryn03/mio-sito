@@ -60,4 +60,108 @@ body {
     background-repeat: no-repeat; /* Evita che l'immagine si ripeta */
     background-attachment: fixed; /* Mantiene lo sfondo fermo mentre scorri */
 }
+/* Lista giocatori */
+#listaGiocatori {
+    list-style: none;
+    padding: 0;
+}
+
+#listaGiocatori li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.nome {
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+/* Stili pulsanti */
+button.presente {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button.assente {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Cambio colore quando viene cliccato */
+.presente-attivo {
+    background-color: lightgreen !important;
+}
+
+.assente-attivo {
+    background-color: pink !important;
+}
+/* Lista giocatori */
+#listaGiocatori {
+    list-style: none;
+    padding: 0;
+}
+
+#listaGiocatori li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease; /* Effetto transizione */
+}
+
+/* Stili per il nome */
+.nome {
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+/* Stili pulsanti */
+button.presente {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button.assente {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Cambio colore quando viene selezionato */
+.presente-attivo {
+    background-color: lightgreen !important;
+}
+
+.assente-attivo {
+    background-color: lightcoral !important;
+}
 
